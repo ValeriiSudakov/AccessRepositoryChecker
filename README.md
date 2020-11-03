@@ -1,7 +1,7 @@
 Install:
 
 - git clone https://github.com/ValeriiSudakov/AccessRepositoryChecker
-- cd sudo snap install clion --classic
+- cd AccessRepositoryChecker
 - cmake .
 - cmake --build .
 
