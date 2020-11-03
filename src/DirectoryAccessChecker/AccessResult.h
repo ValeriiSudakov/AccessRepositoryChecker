@@ -1,0 +1,20 @@
+//
+// Created by valeriisudakov on 03.11.20.
+//
+
+#ifndef DIRECTORYACCESSCHECKER_DIRECTORYACCESSCHECKER_ACCESSRESULT_H_
+#define DIRECTORYACCESSCHECKER_DIRECTORYACCESSCHECKER_ACCESSRESULT_H_
+
+/*
+ * AccessDirectory
+ * Displays result of accessing to directory
+ *
+ * @author: Valerii Sudakov
+ */
+enum class AccessDirectory{
+  DIRECTORY_DOESNT_EXIST,
+  NOT_ENOUGH_PERMISSIONS,
+  DIRECTORY_IS_BUSY,
+  HAS_ACCESS
+};
+#endif //DIRECTORYACCESSCHECKER_DIRECTORYACCESSCHECKER_ACCESSRESULT_H_
