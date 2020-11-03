@@ -10,4 +10,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(DirectoryAccessChecker ${src_cpp} ${src_h} main.cpp )
 
-target_link_libraries(DirectoryAccessChecker ${src_cpp} ${src_h})
+target_link_libraries(DirectoryAccessChecker)

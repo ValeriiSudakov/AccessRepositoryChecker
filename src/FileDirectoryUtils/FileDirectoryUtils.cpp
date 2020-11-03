@@ -52,8 +52,8 @@ Permissions file_directory_utils::DirectoryPermissions(const char *filepath) {
   return permissions;
 }
 
-bool file_directory_utils::MakeDirectory(const char *filepath) {
-  std::string command {"mkdir -p " + *filepath};
+bool file_directory_utils::MakeDirectory(const std::string& filepath) {
+  std::string command {"mkdir -p " + filepath};
   auto result = terminal_utils::ExecuteCommand(command.c_str());
   if (result.empty()){
     return true;

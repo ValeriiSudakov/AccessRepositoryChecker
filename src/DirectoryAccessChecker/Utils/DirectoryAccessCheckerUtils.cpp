@@ -9,8 +9,9 @@ AccessDirectory directory_access_checker_utils::GetAccessByPermissions(const Per
       !permissions.access_read_.has_value() ||
       !permissions.access_execute_.has_value()){
     return  AccessDirectory::DIRECTORY_DOESNT_EXIST;
-  } else if (!permissions.access_read_.value() &&
-             !permissions.access_execute_.value()){
+  } else if (permissions.access_read_.value() == false ||
+             permissions.access_write_.value() == false){
     return AccessDirectory::NOT_ENOUGH_PERMISSIONS;
   }
+  return AccessDirectory::HAS_ACCESS;
 }

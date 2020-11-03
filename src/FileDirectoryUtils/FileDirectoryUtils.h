@@ -34,7 +34,7 @@ namespace file_directory_utils {
  *
  * @input-param: const char* that contains directory pass.
  */
-  bool        MakeDirectory(const char* filepath);
+  bool        MakeDirectory(const std::string& filepath);
 };
 
 #endif //DIRECTORYACCESSCHECKER_FILEDIRECTORYUTILS_FILEDIRECTORYUTILS_H_
