@@ -22,5 +22,14 @@ AccessDirectory DirectoryAccessChecker::AccessCheck() {
       std::cout<<"Made "<<current_work_directory_<<" directory.\n";
     }
   }
+
+  auto program_ids = directory_access_checker_utils::GetProgramProcessesID();
+  auto busy = directory_access_checker_utils::DoesProcessUseFolder(current_work_directory_, program_ids);
+
+  if (busy){
+    std::cout<<"Inputted dir is busy.\n";
+    return AccessDirectory::DIRECTORY_IS_BUSY;
+  }
   return AccessDirectory::HAS_ACCESS;
+
 }

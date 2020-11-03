@@ -20,6 +20,12 @@ class DirectoryAccessChecker {
   DirectoryAccessChecker(const std::string& directory)
   : current_work_directory_(directory) {  }
 
+/*
+ * Check inputted dir to access permissions.
+ *
+ * @return-value: AccessDirectory that contains info about permissions.
+ * @see AccessDirectory.h
+ */
   AccessDirectory AccessCheck();
 
  private:
