@@ -1,3 +1,5 @@
+This program is checking if another hendel of it use the inputted directory.
+
 Install:
 - git clone https://github.com/ValeriiSudakov/AccessRepositoryChecker
 - cd AccessRepositoryChecker
