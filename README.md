@@ -1,4 +1,4 @@
-This program is checking if another hendel of it use the inputted directory.
+This program checks if another instance is using the entered directory.
 
 Install:
 - git clone https://github.com/ValeriiSudakov/AccessRepositoryChecker
