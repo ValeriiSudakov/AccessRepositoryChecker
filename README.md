@@ -1,5 +1,4 @@
 Install:
-
 - git clone https://github.com/ValeriiSudakov/AccessRepositoryChecker
 - cd AccessRepositoryChecker
 - cmake .
